@@ -150,7 +150,9 @@ spec:
       input:
         token: ${{ parameters.token }}
         values:
-          template: '90'
+          template:
+            id: 90
+            name: 'AWS Operations / Create EC2 Instance'
           inventory: ${{ parameters.inventory  }}
           credentials: ${{ parameters.credentials }}
           verbosity: ${{parameters.verbosity}}
