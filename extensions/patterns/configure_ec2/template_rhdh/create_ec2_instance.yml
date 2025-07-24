@@ -147,10 +147,10 @@ spec:
     - id: launch-job
       name: Launch AWS Operations / Create EC2 Instance
       action: rhaap:launch-job-template
-      template: 'AWS Operations / Create EC2 Instance' 
       input:
         token: ${{ parameters.token }}
         values:
+          template: 'AWS Operations / Create EC2 Instance'
           inventory: ${{ parameters.inventory  }}
           credentials: ${{ parameters.credentials }}
           verbosity: ${{parameters.verbosity}}
